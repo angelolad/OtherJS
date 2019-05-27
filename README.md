@@ -1,0 +1,2 @@
+# OtherJS
+Smaller JavaScript projects 
