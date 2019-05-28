@@ -15,25 +15,8 @@ GAME RULES:
 var scores, roundScore,activePlayer, gamePlaying,prevRoll,prevRoll2,winningScore;
 init();
 
-//To select the id use # selector 
-//textContent can only change plain text 
-//to change html we need to use the iner html element
-//document.querySelector('#current-' + activePlayer).textContent = dice;
-//document.querySelector('#current-' + activePlayer).innerHtml = '<em>' + dice + '</em>';
-
 var x = document.querySelector('#score-0').textContent;
 console.log(x);
-
-
-
-/*function btn(){
-    //...
-}
-btn();*/
-
-//Callback functions are functions that would pass another a function
-//as a parameter 
-//document.querySelector('.btn-roll').addEventListener('click',btn);
 
 //anonymous functions: functions that do not have a name, used 
 //when you dont need to use this function elsewhere 
@@ -138,7 +121,7 @@ function init() {
         roundScore = 0;
         prevRoll=0;
         gamePlaying = true;
-        //To select classes use the . dot selector 
+   
         //Hiding the dice object when it starts 
         document.querySelector(".dice").style.display ='none';
         document.querySelector(".dice2").style.display ='none';
@@ -155,6 +138,5 @@ function init() {
         document.querySelector('.player-1-panel').classList.remove('active'); 
     
         document.querySelector('.player-0-panel').classList.add('active'); 
-    
 
 }
