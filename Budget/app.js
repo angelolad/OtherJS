@@ -1,38 +1,3 @@
-/***************************
-* Project: Planning To-Do List
-1. add an EVENT HANDLER to track the click of the button when a new item is added
-2. we also need to GET INPUT VALUES the user inputted. 
-3. add the new item to our DATA STRUCTURE
-4. add the new item to the UI 
-5. calculate NEW BUDGET 
-6. update UI budget 
-
-* Structure our code with modules
-- Use Modules to keep similar code structures together 
-- Seperation of concerns each part should be able to work independently,
-each controller is standalone, does not know each other exist 
-UI Module 
-2. we also need to GET INPUT VALUES the user inputted. 
-4 add the new item to the UI 
-6. update UI budget 
-
-Data Module
-3. add the new item to our DATA STRUCTURE
-5. calculate NEW BUDGET 
-
-Controller Module 
-1. add an EVENT HANDLER to track the click of the button when a new item is added
-
-Event Delegation is used for deleting an item
-- Instead of having a event listener in the button itself, we store it in the main 
-event that stores the income and expense and catch it there 
-Uses cases for Event Delegation:
-1. When we have an element with lots of child elements that we are interested in
-2. When we want an event handler attached to an element that is not yet in the DOM 
-   when our page is loaded. 
-*/
-
-
 // Use IIFE's for data encapsulation, keep data memebers private from other objects 
 // budget controller 
 var budgetController = (function () {
@@ -267,7 +232,7 @@ var UIController = (function () {
         addListItem: function (obj, type) {
             var html, newHtml, element;
             // Create HTML string with placeholder text
-
+           
             //place holders are wrapped in percentage symbols so it is easier to replace and wouldnot
             //intefer with other code 
             if (type === 'inc') {
